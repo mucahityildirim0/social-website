@@ -1,0 +1,7 @@
+.home {
+  height: calc(100vh - 70px);
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
