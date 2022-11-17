@@ -1,7 +1,13 @@
+@import "../../style.scss";
+
 .home {
-  height: calc(100vh - 70px);
-  overflow: scroll;
-  &::-webkit-scrollbar {
-    display: none;
+  @include themify($themes) {
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: themed("bgSoft");
+    padding: 20px 70px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
