@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+
 export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
@@ -7,7 +8,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = () => {
-    //todo
+    //TO DO
     setCurrentUser({
       id: 1,
       name: "John Doe",
@@ -17,7 +18,7 @@ export const AuthContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    localStorage.getItem("user", JSON.stringify(currentUser));
+    localStorage.setItem("user", JSON.stringify(currentUser));
   }, [currentUser]);
 
   return (
