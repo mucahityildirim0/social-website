@@ -6,6 +6,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import Comments from "../comments/Comments";
 
 const Post = ({ post }) => {
   const [commentOpen, setCommentOpen] = useState(false);
@@ -47,7 +48,7 @@ const Post = ({ post }) => {
             Share
           </div>
         </div>
-        {/* {commentOpen && <Comments />} */}
+        {commentOpen && <Comments />}
       </div>
     </div>
   );
